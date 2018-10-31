@@ -1,0 +1,8 @@
+.infB{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgb(170, 154, 154);
+    background-color: white !important;
+    color:  rgb(170, 154, 154);
+}

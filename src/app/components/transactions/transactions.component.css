@@ -1,0 +1,22 @@
+.imgS{
+    height: 50px;
+    width: 50px;
+}
+
+.tabD {
+    border: solid 1px lightgray;
+    width: 100%;
+}
+
+.tdS {
+    border-left: solid 5px ;
+}
+
+.trS{
+    border-top:  solid 5px rgb(82, 132, 190);
+}
+
+.flex-container {
+    display: flex;
+  }
+  

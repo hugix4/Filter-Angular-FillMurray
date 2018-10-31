@@ -1,0 +1,16 @@
+.image{
+    height:40em; 
+    background-size:cover; width:auto;
+    background-image:url('../assets/img/background.jpg');
+    background-position:50% 50%;
+  }
+
+  .c1 {
+    max-width: 100% !important;
+  }
+
+  .s1{
+    background-color: green;
+    
+  }
+  

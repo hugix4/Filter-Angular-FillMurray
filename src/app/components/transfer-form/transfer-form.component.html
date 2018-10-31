@@ -1,0 +1,40 @@
+<div class="">
+  <form [formGroup]="formaInicial" (submit)="onSubmit(formaInicial.value)">
+    <label for="from">
+      From Account: <br>
+      <input class="infB" type="text" formControlName="from" required>
+      <br>
+      <span *ngIf="!formaInicial.get('from').valid && formaInicial.get('from').dirty && formaInicial.get('from').touched"
+        class="error">
+        From isn't correct</span>
+    </label>
+    <br>
+    <label for="to">
+      To Account: <br>
+      <input class="infB" type="text" formControlName="to" required>
+      <br>
+      <span *ngIf="!formaInicial.get('to').valid && formaInicial.get('to').dirty && formaInicial.get('to').touched"
+        class="error">
+        To isn't correct</span>
+    </label>
+    <br>
+    <label for="amount">
+      Amount: <br>
+      <input class="infB" type="text" formControlName="amount" maxlength="8" required> <br>
+      <span *ngIf="!formaInicial.get('amount').valid && formaInicial.get('amount').dirty" class="error">
+        amount has to have at least <br> 8 characters <br> one number <br> special character</span>
+    </label>
+    <br>
+    <button type="submit" [disabled]="!formaInicial.valid">Send</button>
+    <button type="button" (click)="resetear()">Clear</button>
+
+  </form>
+
+
+  <br>
+  <br>
+  Valores de la forma es: {{formaInicial.value | json}} <br>
+  Forma es: {{formaInicial.valid | json}} <br>
+  <!-- dirty: {{mail.dirty}} -->
+
+</div>

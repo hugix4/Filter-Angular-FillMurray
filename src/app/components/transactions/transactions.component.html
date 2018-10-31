@@ -1,0 +1,51 @@
+<div class="row">
+  <form [formGroup]="searchForm">
+    <input type="text" formControlName="search" placeholder="Search by name">
+    {{searchForm.value.search}} <br>
+    <div *ngFor="let d of d1 | filtro : searchForm.value.search">
+      <br>
+
+      <table>
+        <td width="20%">
+          {{d.name}}
+        </td>
+        <td>
+          <table class=" tabD">
+            <tr class="trS">
+              <td width="20%">
+                <img [src]="d.img" alt="filmurray" style="width: 100px; border-radius: 10%;">
+              </td>
+              <td style="text-align: center;">
+                <button (click)="message1(d.name)">Send message</button>
+                <mat-progress-bar [value]="d.rating *20">
+                </mat-progress-bar>
+              </td>
+            </tr>
+            <tr>
+              <td class="tdS" colspan="3">
+                {{d.Description }}
+              </td>
+            </tr>
+          </table>
+          <div class="flex-container">
+            <div class="col-md-6">
+              <table class="table-striped">
+        <th>Dislikes</th>
+        <tr *ngFor="let d2 of d.Dislikes">{{d2}}</tr>
+      </table>
+    </div>
+    <div class="col-md-6">
+      <table class="table-striped">
+        <th>Likes</th>
+        <tr *ngFor="let d3 of d.Likes">{{d3}}</tr>
+      </table>
+    </div>
+</div>
+</td>
+
+</table>
+
+</div>
+</form>
+
+</div>

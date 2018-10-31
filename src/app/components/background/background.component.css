@@ -1,0 +1,14 @@
+.header{
+    background-color: aliceblue;
+    height: 50px;
+    border-bottom: 5px solid orange;
+}
+
+.logo{
+    height: 3em; 
+    width: auto;
+    background-image: url('../../../assets/img/logo.jpg');
+    /*background-position:50% 50%;*/
+    background-repeat: no-repeat;
+    margin-left: 0%;
+}
