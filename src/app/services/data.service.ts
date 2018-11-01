@@ -10,7 +10,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class DataService {
 
-  private _url = 'src/app/components/transactions/transactions.json';
+  // private _url = 'src/app/components/transactions/transactions.json';
+  private _url = 'src/assets/transactions.json';
   constructor(private http: HttpClient) { }
 
   bringData() {
