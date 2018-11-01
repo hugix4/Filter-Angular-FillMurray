@@ -19,7 +19,7 @@ export class DataService {
     //   (data) => console.log(JSON.stringify(data))
     // );
 
-    return this.http.get(this._url, { responseType: 'json' });
+    return this.http.get(this._url, { responseType: 'text' });
 
     /*.map(
           (response) => response.json()
