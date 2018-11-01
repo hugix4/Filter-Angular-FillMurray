@@ -17,8 +17,10 @@ export class TransactionsComponent implements OnInit {
   public d1: any = [];
   ngOnInit() {
     this.data.bringData().subscribe(datos => {
+      console.log("Datos: ");
       console.log(datos);
       const datos2 = JSON.parse(datos);
+      console.log("Datos2: ");
       console.log(datos2);
       this.d1 = datos2['People'];
       console.log(this.d1);
